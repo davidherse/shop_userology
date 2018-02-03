@@ -1,0 +1,298 @@
+---
+---
+// Global Styles
+@import "colors";
+@import "reset";
+
+
+// Components
+@import "components/nav/style";
+@import "components/footer/style";
+
+
+.header, .header--about {
+  position: relative;
+  overflow: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f3f3+39,e8e8e8+100 */
+  background: #f3f3f3; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #f3f3f3 39%, #e8e8e8 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #f3f3f3 39%,#e8e8e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #f3f3f3 39%,#e8e8e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-align: left;
+  padding: 0px 20px;
+  height: 90vh;
+  min-height: 545px;
+  display: block;
+  h1, h2, p, label, a {
+    color: $graphite;
+  }
+}
+
+.boom {
+  position: absolute;
+  left: 50vw;
+  margin-left: -35px;
+  top: 230px;
+}
+
+.tripod {
+  position: absolute;
+  bottom: -31px;
+  left: 50vw;
+  margin-left: -62px;
+}
+
+.name_lockup {
+  max-width: 355px;
+  left: 51vw;
+  position: relative;
+  margin-left: -185px;
+  top: 50px;
+}
+
+h1.product_name {
+  font-size: 60px;
+  color: #D8D8D8;
+  font-weight: 900;
+  margin: 0px;
+  line-height: 61px;
+}
+
+.header--about {
+  min-height: auto;
+  padding-bottom: 60px;
+}
+
+.header__section {
+  max-width: 750px;
+  margin: 0 auto;
+  h2 {
+    margin-bottom: 46px;
+  }
+}
+
+.header__h1 {
+  max-width: 900px;
+  margin: 12px auto 24px auto;
+}
+
+.header__p {
+  max-width: 355px;
+  margin: 5px 0 0 0;
+  line-height: 25px;
+  font-size: 21px;
+}
+
+.main, .main--about, .main--privacy-policy {
+  padding: 30px 30px;
+  max-width: 1145px;
+  margin: 0 auto;
+}
+
+.main--about, .main--privacy-policy {
+  text-align: left;
+  max-width: 750px;
+  p {
+    color: $graphite;
+  }
+}
+
+
+.main__img, 
+.main__text {
+  width: 100%;
+  max-width: 503px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main__open {
+  margin: 20px 0 70px 0;
+  p {
+    color: $graphite;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.main__section {
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.main__cta {
+  align-items: center;
+  text-align: center;
+}
+
+.cta {
+  background-color: $grey-light;
+  height: 40vh;
+  display: flex;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.register {
+  max-width: 414px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  background-color: $salmon !important;
+}
+
+#mc_embed_signup input.mce_inline_error {
+   border-color: $salmon !important; 
+}
+
+.footer{
+  padding: 40px;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"],
+.button,
+a.button,
+a.button--header
+{
+  /* Fix IE7 display bug */
+  overflow:visible;
+  width:auto;
+  padding: 12px 153px 13px 28px;
+  margin: 20px 0;
+  color: $white;
+  cursor: pointer;
+  border-radius: 1000px;
+  background-color: $purple;
+  background-image: url("{{ '/assets/img/button_icon.svg' | fingerprint }}");
+  background-position: center right;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  font-size: 14px;
+  &:hover, &:focus {
+    color: $white;
+    padding: 12px 158px 13px 28px;
+    outline: 0;
+    box-shadow: 2px 2px  5px $grey;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+  }
+}
+
+a.button--header {
+  position: absolute;
+  padding: 5px 123px 5px 28px;
+  left: 50vw;
+  margin-left: -104px;
+  top: 61%;
+  z-index: 2;
+
+ &:hover, &:focus {
+    padding: 5px 128px 5px 28px;
+  }
+}
+
+
+@media all and (min-width: 600px) {
+  .boom {
+    left: 100vw;
+    top: 85px;
+    margin-left: -344px;
+  }
+
+  .name_lockup {
+    max-width: 605px;
+    left: 51vw;
+    position: relative;
+    margin-left: -307px;
+    top: 222px;
+  }
+
+  h1.product_name {
+    font-size: 101px;
+    line-height: 78px;
+  }
+
+  a.button--header {
+    margin-left: 58px;
+    top: 330px;
+  }
+
+}
+
+@media all and (min-width: 769px) {
+  .name_lockup {
+      max-width: 716px;
+      left: 51vw;
+      position: relative;
+      margin-left: -358px;
+      top: 222px;
+  }
+
+  h1.product_name {
+    font-size: 135px;
+    line-height: 105px;
+  }
+
+  .header__p {
+    max-width: 409px;
+    margin: 5px 0 0 0;
+    line-height: 30px;
+    font-size: 26px;
+  }
+
+  a.button--header {
+      margin-left: 97px;
+      top: 365px;
+  }
+
+  .cta {
+    margin: 0 20px;
+  }
+
+  .main__section {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+    &:nth-child(odd) {
+       flex-direction: row-reverse;
+    }
+  }
+
+  .main__img, 
+  .main__text {
+    width: 100%;
+    max-width: 503px;
+    margin: 0 20px; 
+    flex-basis: 50%;
+    width: 100px;
+  }
+
+  .main__img {
+    padding-bottom: 30px;
+  }
+
+  .footer{
+    padding: 60px;
+  }
+
+}
+
+
+.response {
+  font-size: 24px;
+  color: $white;
+}
