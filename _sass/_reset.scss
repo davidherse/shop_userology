@@ -1,6 +1,12 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 110%;
@@ -44,36 +50,33 @@ em {
 
 p {
   font-size: 20px;
+  margin-bottom: 18px;
+
   font-weight: normal;
 }
 
 h1 {
   font-size: 36px;
   margin: 12px 0 24px 0;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 1.3em;
 }
 
 h2 {
   font-size: 36px;
   margin: 12px 0 24px 0;
-  font-weight: 500;
+  font-weight: normal;
   line-height: 1.3em;
 }
 
 h3 {
   font-size: 18px;
   margin: 6px 0;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 h4 {
   margin-top: 60px;
-}
-
-p {
-  margin-bottom: 18px;
-  color: $grey;
 }
 
 
@@ -85,6 +88,18 @@ img {
   border: none;
 }
 
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 26px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+li {
+    margin-left: 1em;
+    font-size: 15px;
+}
 
 input,
 label,

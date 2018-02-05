@@ -1,11 +1,11 @@
 .footer {
   background-color: $blue;
   font-size: 14px;
-  color: $white; 
+  color: $grey; 
 
   p {
     font-size: 14px;
-    color: $blue-light; 
+    color: $grey; 
   }
 }
 
@@ -14,7 +14,8 @@
   padding: 10px 0;
   min-width: 224px;
   &:first-child {
-    border-bottom: 1px solid #377EAD;
+    border-bottom: 1px solid $grey;
+
   }
 }
 
@@ -22,11 +23,11 @@
 .footer__link {
   display: block;
   line-height: 24px;
-  color: $white;
+  color: $grey;
   text-decoration: none;
 
   &:hover {
-    color: $white;
+    color: $grey;
     text-decoration: underline;
   }
 }
@@ -43,12 +44,12 @@
   }
 
   .footer__section {
-    border-right: 1px solid #377EAD;
+    border-right: 1px solid $grey;
     width: 25%;
     padding-left: 30px;
     &:first-child {
       padding-left: 0px;
-      border-bottom: 0px solid #377EAD;
+      border-bottom: 0px solid $grey;
     }
   }
 }
