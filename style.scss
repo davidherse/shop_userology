@@ -10,7 +10,7 @@
 @import "components/footer/style";
 
 
-.header, .header--about {
+.header, .cart__header {
   position: relative;
   overflow: hidden;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f3f3+39,e8e8e8+100 */
@@ -28,6 +28,62 @@
   }
 }
 
+.cart__header {
+  background: $white;
+  height: auto;
+  min-height: unset;
+}
+
+.cart__images {
+  padding: 20px;
+  text-align: center;
+}
+
+.cart__image {
+  width: 48%;
+  bottom: 0px;
+  display: block;
+  display: inline-grid;
+  border: 1px solid $grey;
+  margin: 1%;
+  margin: 0;
+}
+
+.cart__stock {
+  padding: 0 20px;
+}
+
+.icon--cart {
+  padding: 0 10px;
+}
+
+.out-stock {
+  color: red;
+}
+
+.register {
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  padding: 20px 0;
+}
+
+.cart__description {
+  padding: 10px 20px;
+
+  ul {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.price__value {
+  font-weight: bold;
+  font-size: 37px;
+}
+
 .boom {
   position: absolute;
   left: 50vw;
@@ -42,12 +98,17 @@
   margin-left: -62px;
 }
 
-.name_lockup {
+.name_lockup,
+.name_lockup--cart {
   max-width: 355px;
-  left: 51vw;
+  left: 10px;
   position: relative;
-  margin-left: -185px;
   top: 50px;
+  margin: 0 auto;
+}
+
+.name_lockup--cart {
+  margin-bottom: 48px;
 }
 
 h1.product_name {
@@ -241,24 +302,23 @@ a.button--header {
     position: relative;
     margin-left: -307px;
     top: 222px;
-  }
 
-  h1.product_name {
-    font-size: 101px;
-    line-height: 78px;
-  }
+    h1.product_name {
+      font-size: 101px;
+      line-height: 78px;
+    }
 
-  a.button--header {
-    margin-left: 58px;
-    top: 330px;
+    a.button--header {
+      margin-left: 58px;
+      top: 330px;
+    }
+
   }
 
 }
 
 
 @media all and (min-width: 700px) {
-  
-
   .footer{
     padding: 60px;
   }
@@ -358,24 +418,24 @@ a.button--header {
 
 
 @media all and (min-width: 769px) {
-.name_lockup {
-      max-width: none;
-      left: 50vw;
-      position: relative;
-      margin-left: -360px;
-      top: 222px;
-  }
+  .name_lockup {
+    max-width: none;
+    left: 50vw;
+    position: relative;
+    margin-left: -360px;
+    top: 222px;
+    
+    h1.product_name {
+      font-size: 135px;
+      line-height: 105px;
+    }
 
-  h1.product_name {
-    font-size: 135px;
-    line-height: 105px;
-  }
-
-  .header__p {
-    max-width: 409px;
-    margin: 5px 0 0 0;
-    line-height: 30px;
-    font-size: 26px;
+    .header__p {
+      max-width: 409px;
+      margin: 5px 0 0 0;
+      line-height: 30px;
+      font-size: 26px;
+    }
   }
 
   a.button--header {
